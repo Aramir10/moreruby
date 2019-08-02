@@ -97,10 +97,25 @@ def enter_team
   puts "Enter a seed"
   seed = gets.chomp.to_i
 
+
+
   team = Team.new(name, seed)
   @tournament.push(team)
 
   puts @tournament
 
 end
+
+  def list_teams
+
+    put "The teams are #{}"
+
+  end
+
+  def list_matchups
+
+
+  end
+
+
  menu
