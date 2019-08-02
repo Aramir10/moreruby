@@ -14,16 +14,16 @@
   score = gets.chomp.to_i
 
    case score
-    when 90..100
+   when (90..100) then
       puts "A"
-      
-    when 80..89
+
+    when (80..89) then
       puts  "B"
-    when 70..79
+    when (70..79) then
        puts "C"
-     when 60..69
+     when (60..69) then
        puts "D"
-     when 0..59
+     when (0..59) then 
        puts "F"
       else
       puts "Error"
