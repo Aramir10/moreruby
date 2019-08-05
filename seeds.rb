@@ -91,31 +91,45 @@ end
 
 def enter_team
 
+	4.times do
   puts "Enter a team name "
   name = gets.chomp
-
   puts "Enter a seed"
   seed = gets.chomp.to_i
 
 
+			 class Team
+				 attr_accessor :name, :seed
+				 def initialize(name, seed)
+				 @name =name
+				 @seed =seed
+			  end
+		    end
+				team = Team.new(name, seed)
+				@tournament.push(team)
 
-  team = Team.new(name, seed)
-  @tournament.push(team)
 
-  puts @tournament
+	end
 
-end
+  end
 
-  def list_teams
+
+
+
+
+
+
+
+
+
+
+	def list_teams
 
     put "The teams are #{}"
 
   end
 
   def list_matchups
-
-
-  end
-
+	end
 
  menu
